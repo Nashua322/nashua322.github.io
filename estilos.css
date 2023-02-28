@@ -1,0 +1,477 @@
+/* FUENTES*/
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Kanit:wght@300&family=Montserrat:wght@300&family=Open+Sans&family=Tilt+Warp&display=swap');
+
+* {
+    font-family: "Montserrat";
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* SECCION INICIO */
+
+.inicio {
+
+    background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)),
+        url("./img/ushuaia3.jpg");
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
+}
+
+/*centrando textos  */
+.inicio .contenido-inicio {
+    max-width: 2000px;
+    margin: auto;
+    text-align: center;
+    padding: 0 10px;
+}
+
+/*separacion del margen superior*/
+.inicio .contenido-inicio header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3px;
+}
+
+/*Orden del logo "nombre*/
+.inicio .contenido-inicio header .logo {
+    flex: 1 1 50%;
+    width: 49%;
+    position: static;
+    margin-left: 35px;
+    padding: 5px;
+    text-align: left;
+    color: #cc0a44;
+    font-family: "Tilt Warp";
+    font-size: 30px;
+}
+
+/* Estilos para dispositivos móviles */
+@media only screen and (max-width: 767px) {
+    .inicio .contenido-inicio header .logo {
+        position: static;
+        text-align: center;
+        font-size: 20px;
+    }
+}
+
+/* Estilos para tabletas */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .inicio .contenido-inicio header .logo {
+        position: static;
+        margin-left: 25px;
+        padding: 10px;
+        text-align: left;
+        font-size: 22px;
+    }
+}
+
+.nav {
+    flex: 1 1 50%;
+    display: flex;
+    color: #fff;
+    justify-content: flex-end;
+    /* Centra los elementos horizontalmente */
+    align-items: center;
+    /* Centra los elementos verticalmente */
+    text-decoration: none;
+    margin-bottom: 10px;
+    font-weight: bold;
+
+}
+
+/* Estilo para pantallas grandes (PC) */
+@media screen and (min-width: 992px) {
+    .nav a {
+        font-size: 18px;
+    }
+}
+
+/* Estilo para pantallas medianas (tablets) */
+@media screen and (max-width: 991px) {
+    .nav a {
+        justify-content: center;
+        font-size: 16px;
+    }
+}
+
+/* Estilo para pantallas pequeñas (celulares) */
+@media screen and (max-width: 767px) {
+    .nav a {
+        justify-content: center;
+        font-size: 12px;
+        padding: 5px 0;
+    }
+}
+
+.nav-link {
+    display: inline-block;
+    color: #fff;
+    /* Color del texto de los enlaces */
+    text-decoration: none;
+    /* Quita la subraya del texto de los enlaces */
+    margin: 0 10px;
+    /* Espacio entre los enlaces */
+}
+
+.nav-link:hover {
+    color: #cc0a44;
+    /* Color del texto de los enlaces cuando se pasa el cursor sobre ellos */
+}
+
+.info {
+    padding-top: 200px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.inicio .contenido-inicio .info h1 {
+    text-align: center;
+    font-size: 3rem;
+    font-family: "Open Sans";
+    font-size: 40px;
+    font-weight: bolder;
+    color: #cc0a44;
+}
+
+.inicio .contenido-inicio .info h2 {
+    font-weight: normal;
+    font-size: 16px;
+    margin-top: -10px;
+}
+
+.inicio .contenido-inicio .info .redes {
+    margin: 20px 0;
+    font-size: 0.6em;
+}
+
+.inicio .contenido-inicio .info .redes a {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    margin: 0 2px;
+    transition: .3s;
+}
+
+.inicio .contenido-inicio .info .redes a:hover {
+    color: #fff;
+    background-color: #a30333;
+    box-shadow: 0 0 20px #fff;
+}
+
+
+/****SECCION SOBRE MI****/
+
+.sobre-mi {
+    background-color: #000;
+    width: 100%;
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    /* Mostrar los divs uno al lado del otro en PC */
+}
+
+/*DIV IZQUIERDO*/
+.foto {
+    flex: 1 1 50%;
+    /* Dividir el espacio en dos en PC */
+    padding: 40px;
+    box-sizing: border-box;
+    width: 49%;
+    justify-items: center;
+    max-width: 600px;
+}
+
+.foto img {
+    margin: 30px;
+    width: 80%;
+    border: solid 15px;
+    border-image: linear-gradient(to right, #cc0a44 50%, #000 50%) 1 1;
+}
+
+/*DIV DERECHO*/
+.contenido-seccion {
+    flex: 1 1 50%;
+    /* Dividir el espacio en dos en PC */
+    padding: 40px;
+    box-sizing: border-box;
+    color: #fff;
+}
+
+.contenido-seccion>div {
+    margin-bottom: 30px;
+}
+
+.texto {
+    flex-basis: 50%;
+    /* Establecer el ancho en 50% */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+@media (max-width: 900px) {
+    .sobre-mi {
+        flex-direction: column;
+        /* Mostrar los divs uno encima del otro en tablet o celular */
+        height: auto;
+        /* Establecer la altura en auto para que se ajuste al contenido */
+        max-width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .foto,
+    .contenido-seccion {
+        flex: 1 1 100%;
+        /* Establecer el ancho en 100% para que ocupen todo el espacio */
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+
+.titulo-seccion {
+    flex: 1 1 50%;
+    padding: 15px 15px 15px 0;
+    margin-top: 35px;
+    font-size: .9em;
+    color: #fff;
+}
+
+.datos-sobre-mi {
+    flex: 1 1 50%;
+    color: #686464;
+    font-size: 0.8em;
+    margin: 0 30px 20px 0
+}
+
+.texto,
+.datos {
+    flex-basis: 100%;
+}
+
+.datos {
+    flex-basis: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    height: 230px;
+}
+
+.datos .llave {
+    flex: 1 1 40%;
+    font-size: 0.8em;
+}
+
+.datos .valor {
+    flex: 1 1 60%;
+    font-size: 0.8em;
+    color: #686464;
+}
+
+
+
+.download-cv {
+    background-color: #cc0a44;
+    border-radius: 25px 25px 25px 25px;
+    overflow: hidden;
+    font-size: 0.7em;
+    font-weight: bold;
+    color: #fff;
+    padding: 3px 30px 3px 30px;
+    margin-top: 10px;
+}
+
+
+
+/****SECCION MIS HABILIADES****/
+
+.habilidades {
+    background-color: #000;
+    height: 600px;
+    
+}
+
+.habilidades header {
+    font-size: 28px;
+    text-align: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: bold;
+    position: relative;
+}
+
+.habilidades header p {
+    margin-bottom: 0;
+    margin-top: 50px;
+}
+
+.habilidades header::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 5%;
+    height: 1px;
+    background-color: #cc0a44;
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    /* espacio entre las tarjetas */
+    margin: 50px;
+}
+
+
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #2c2b2b;
+    margin: 30px;
+}
+
+.icon {
+    display: block;
+    border-radius: 50%;
+    border: 1px solid #cc0a44;
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    line-height: 50px;
+    color: #fff;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+.service1 {
+    text-align: center;
+    justify-content: center;
+    font-size: 10px;
+    margin-top: 15px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.description {
+    text-align: justify;
+    margin: 30px;
+    font-size: 10px;
+    color: #777777;
+}
+
+
+
+/***SECCION FORMULARIO***/
+.contacto {
+    background-color: #000;
+    width: 100%;
+    background-size: cover;
+    height: 400px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.contacto header {
+    font-size: 28px;
+    text-align: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: bold;
+    position: relative;
+    padding: 20px;
+}
+
+
+
+form {
+
+    margin: 0 auto;
+    width: 400px;
+    padding: 1em;
+    border: 1px solid #cc0a44;
+    border-radius: 1em;
+}
+
+form ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+form li + li {
+    margin-top: 1em;
+  }
+
+  label {
+ 
+    display: inline-block;
+    width: 90px;
+    color: #fff;
+    text-align: right;
+  }
+
+  input,
+textarea {
+  /* Para asegurarse de que todos los campos de texto tienen la misma configuración de letra
+     Por defecto, las áreas de texto tienen un tipo de letra monoespaciada */
+  font: 1em sans-serif;
+
+  /* Tamaño uniforme del campo de texto */
+  width: 300px;
+  box-sizing: border-box;
+
+  /* Hacer coincidir los bordes del campo del formulario */
+  border: 1px solid #999;
+}
+
+input:focus,
+textarea:focus {
+  /* Destacado adicional para elementos que tienen el cursor */
+  border-color: #000;
+}
+
+textarea {
+    /* Alinear los campos de texto multilínea con sus etiquetas */
+    vertical-align: top;
+  
+    /* Proporcionar espacio para escribir texto */
+    height: 5em;
+  }
+  
+  .button {
+    background-color: #cc0a44;
+    border-radius: 25px 25px 25px 25px;
+    overflow: hidden;
+    font-size: 0.7em;
+    font-weight: bold;
+    color: #fff;
+    padding: 3px 30px 3px 30px;
+    margin-top: 10px;
+  }
+  

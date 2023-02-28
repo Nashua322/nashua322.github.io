@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>CV Gaston Reale</title>
+
+
+</head>
+
+<body>
+    <!-- SECCION INICIO-->
+    <section class="inicio" id="inicio">
+        <div class="contenido-inicio">
+            <header>
+                <div class="logo">
+                    NASHUA
+                </div>
+                <nav id="nav" class="nav">
+                    <a href="#inicio" class="nav-link">Inicio</a>
+                    <a href="#sobre-mi" class="nav-link">Sobre mi</a>
+                    <a href="#habilidades" class="nav-link">Habilidades</a>
+                    <a href="#contacto" class="nav-link">Contacto</a>
+                </nav>
+            </header>
+            <div class="info">
+                <h1>GASTON REALE</h1>
+                <h2>|Codificador, Diseñador, M.M.O.|</h2>
+                <div class="redes">
+                    <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://ar.linkedin.com/"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <!--SECCION SOBRE MI-->
+
+    <section class="sobre-mi" id="sobre-mi">
+        <div class="foto">
+            <img src="img/vegeta.png" alt="imagen para CV ">
+        </div>
+        <div class="contenido-seccion">
+            <div class="texto">
+                <h2 class="titulo-seccion">SOBRE MI</h2>
+                <h3 class="datos-sobre-mi">Lorem ipsum dolor sit amobre Miet consectetur adipisicing elit.
+                    Officia, quam molestiae dolores earum inventore ab eligendi
+                    tempora dolorum sapiente porro distinctio sed temporibus enim
+                    sit nulla consequuntur hic voluptates blanditiis.
+                </h3>
+            </div>
+            <div class="datos" id="datos">
+                <p class="llave" id="name">Nombre</p>
+                <h3 class="valor">Leandro Gaston Reale</h3>
+                <p class="llave" id="edad">Edad</p>
+                <h3 class="valor">35 Años</h3>
+                <p class="llave" id="localidad">Localidad</p>
+                <h3 class="valor">Ushuaia- Tierra del Fuego</h3>
+                <p class="llave" id="telefono">Telefono</p>
+                <h3 class="valor">4</h3>
+                <p class="llave" id="correo">Correo</p>
+                <h3 class="valor">xxx.xxx@gmail.com</h3>
+                <div>
+                    <a href="The-best-interactive-cheat-sheet.pdf" download>
+                    <button class="download-cv">DOWNLOAD CV</button>
+                </a>
+                </div>
+                
+            </div>
+            </p>
+        </div>
+    </section>
+
+
+    <!--SECCION MIS SERVICIOS-->
+    <section class="habilidades" id="habilidades">
+        <header class="titulo">MIS HABILIDADES</header>
+        <div class="cards">
+            <div class="card">
+                <div class="icon"><i class="fa-solid fa-pen"></i></div>
+                <p class="service1">WEB DESIGN</p>
+                <h3 class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. At sapiente voluptate
+                    reprehenderit.
+            </div>
+            <div class="card">
+                <div class="icon"><i class="fa-solid fa-flag"></i></div>
+                <p class="service1">BRANDING</p>
+                <h3 class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. At sapiente voluptate
+                    reprehenderit.
+            </div>
+            <div class="card">
+                <div class="icon"><i class="fa-solid fa-laptop"></i></div>
+                <p class="service1">USER INTERFACE</p>
+                <h3 class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. At sapiente voluptate
+                    reprehenderit.
+                </h3>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="contacto" id="contacto">
+        <header class="texto">CONTACTO </header>
+        <form action="/my-handling-form-page" method="post">
+            <ul>
+                <li>
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" name="user_name" />
+                </li>
+                <li>
+                    <label for="mail">Correo electrónico:</label>
+                    <input type="email" id="mail" name="user_email" />
+                </li>
+                <li>
+                    <label for="msg">Mensaje:</label>
+                    <textarea id="msg" name="user_message"></textarea>
+                </li>
+                <button type="button" class="button">Enviar Mensaje</button>
+            </ul>
+        </form>
+    </section>
+
+
+</body>
+
+</html>
